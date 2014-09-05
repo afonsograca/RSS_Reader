@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+	<cpname itemtype="string">RSS-Reader</cpname>
+	<cplogo itemtype="string"></cplogo>
+	<login itemtype="string">y</login>
+	<cpauthjs itemtype="string">Authorization</cpauthjs>
+	<ver itemtype="string">0.01</ver>
+	<mgrver itemtype="string">1.000</mgrver>
+	<fullwidget itemtype="boolean">y</fullwidget>
+	<srcctl itemtype="boolean">n</srcctl>
+	<ticker itemtype="boolean">y</ticker>
+	<childlock itemtype="boolean">n</childlock>
+	<audiomute itemtype="boolean">n</audiomute>
+	<videomute itemtype="boolean">n</videomute>
+	<dcont itemtype="boolean">n</dcont>
+	<type itemtype="string">user</type>
+	<widgetname itemtype="string">RSS Reader</widgetname>
+	<description itemtype="string"></description>
+	<width itemtype="number">960</width>
+	<height itemtype="number">540</height>
+	<author itemtype="group">
+		<name itemtype="string">Afonso Graça and João Vieira</name>
+		<email itemtype="string"></email>
+		<link itemtype="string"></link>
+		<organization itemtype="string">HCI</organization>
+	</author>
+</widget>

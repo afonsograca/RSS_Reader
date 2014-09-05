@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+	height:100%;
+	width: 100%;
+}
+
+body {
+	font: 14px/20px Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: normal;
+  font-style: normal;
+  color: #bbb;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #191919;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #bbb;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+#grid-wrapper {
+	/*width: 100%;
+	height: 100%;*/
+	width: 960px;
+	height: 540px;
+	table-layout: fixed;
+	border-collapse:collapse;
+}
+
+#header {
+	height: 75px;
+	text-align: left;
+}
+
+#header-left-wrapper {
+	width: 27%;
+	border-right: 1px solid #191919;
+}
+
+#header-right-wrapper {
+	width: 72%;
+}
+
+#content {
+	height: 87%;
+	vertical-align: top;
+}
+
+#content-left-wrapper {
+	background: #d1e1ed;
+	border-right: 1px solid #191919;
+	height:465px;
+}
+
+#feed-title {
+	float: left;
+	margin-left: 20px;
+	height: 70px;
+}
+
+#logo {
+	float: right;
+	padding: 0px 15px 0px 15px;
+}
+
+#logo img {
+	width: 70px;
+}
+
+.header {
+	background: url(../images/gloss_bg.png) repeat-x;
+	width: 100%;
+	height: 75px;
+	position: relative;
+}
+
+#left_top, #middle_left, #middle_right, #right_top {
+	position:absolute;
+	top:0;
+}
+
+#left_top, #middle_right {
+	left:0;
+}
+
+#middle_left, #right_top {
+	right:0;
+}
+
+#left_top {
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+li {
+	padding: 7px;
+	list-style: none;
+	height: 50px;
+	border-bottom: 1px solid #bbb;
+	background: url(../images/list-gradient.png) repeat-x 0 bottom;
+}
+
+.listitem {
+	height: 100%;
+}
+
+li.selected {
+	background: white url(../images/arrow.png) no-repeat 50% 50%;
+	background-position:230px 25px;
+}
+
+li.selected .news-title h2 {
+	font-weight: bold;
+}
+
+.news-number {
+	width: 25px;
+	background: url(../images/news-number.png) no-repeat 50% 50%;
+	text-align: center;
+	color: white;
+	font-family: Helvetica Neue;
+	font-size: 11px;
+}
+
+.news-marker {
+	width: 20px;
+	background: url(../images/marker.png) no-repeat 50% 50%;
+}
+
+.news-title {
+	padding-left: 28px;
+}
+
+.news-title h2, h3 {
+	font-family: Helvetica Neue;
+		overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+}
+
+.news-title h2{
+	font-size: 15px;
+	width:194px;
+}
+
+.news-title h3 {
+	padding-top:2px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #888;
+}
+
+.news-marker + .news-title {
+	padding-left: 8px;
+}
+
+.news-number + .news-title {
+	padding-left: 3px; 
+}
+
+#content-right-wrapper {
+	background: white url(../images/content-bg.png) repeat-y;
+	height:465px;
+	padding: 20px;
+}
+
+#navigation {
+	float:left;
+	height: 75px;
+}
+
+#logo_title {
+	padding-left: 25px;
+}
+
+#back {
+	padding-left: 25px;
+	width: 18px;
+	background: url(../images/return.png) no-repeat;
+	background-position: 40px 24px;
+}
+
+#back h3 {
+	padding-left: 40px;
+	font-family: Helvetica Neue;
+	font-size: 14px;
+}
+
+#news-title {
+	font-size: 28px;
+	line-height: 32px;
+	height:64px;
+	color: #538dbb;
+	margin-bottom: 8px;
+}
+
+#news-info {
+	font-size: 13px;
+	font-weight: bold;
+	color: #191919;
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 15px;
+}
+
+#user {
+	float: left;
+}
+
+#date {
+	float: right;
+}
+
+#selector {
+	font-weight: bold;
+	color: #ddd;
+	font-size: 38px;
+	line-height: 425px;
+	text-align: center;
+}
+
+.top {
+	position: absolute;
+	width: 261px;
+	z-index: 10;
+}
+.bottom {
+	position: absolute;
+	width: 261px;
+	z-index: 1;
+}
+.hidden {
+	display:none;
+}
+
+#feed-title td{
+	color: white;
+	font-size: 30px;
+}
+#rss-list-top h3 {
+	display: none;
+}
+
+#ui-scroll-bead-top, #ui-scroll-bead-bottom {
+    position : absolute;
+    left : 249px;
+    top : 0px;
+    width : 10px;
+    height : 40px;
+    background-image:url(../images/scroll-bead.png);
+}
+
+#main-content-bead {
+	position : absolute;
+	left: 947px;
+    top : 190px;
+    width : 10px;
+    height : 40px;
+    background-image:url(../images/scroll-bead.png);
+}
+
+#news-content {
+	height:318px;
+	overflow: auto;
+}
+
+
+#news-content a {
+    text-decoration: none;
+    overflow : hidden;    
+    text-align : left;
+    font-size : 16px;
+    color : #FFFFFF;
+    line-height : 22px;
+}
+#loading {
+	position:absolute;
+	width:128px;
+	height:128px;
+	z-index:50;
+	left:416px;
+	top:206px;
+	background-image:url(../images/logo.png);
+}

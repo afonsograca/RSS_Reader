@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>RSS Reader</title>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/jquery.js'></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/core.js'></script>
+		
+		<script type='text/javascript' language='javascript' src='Main/Main.js'></script>
+		<script type='text/javascript' language='javascript' src='Authorization.js'></script>
+		
+		<link rel='stylesheet' type='text/css' href = 'css/main.css'/>
+	</head>
+<body onload="Main.onLoad();">
+	<a href='javascript:void(0);' id='anchor' onkeydown='Main.keyDown();'></a>
+	
+	<table id="grid-wrapper">
+		<tr id="header">
+	    	<th id="header-left-wrapper">
+				<div id="header-left" class="header">
+					<div id="left_top">
+						<img src="images/left_top.png" alt="" height="75"/>
+					</div>
+					<table id="navigation">
+						<td id="back">
+							<h3>Home</h3>
+						</td>
+					</table>
+					<div id="logo">
+						<img src="images/logo.png" alt="">
+					</div>
+					<div id="middle_left">
+						 <img src="images/middle_left.png" alt="" height="75"/>
+					</div>
+				</div>
+			</th>
+			<th id="header-right-wrapper">
+				<div id="header-right" class="header">
+					<div id="middle_right">
+						 <img src="images/middle_right.png" alt="" height="75"/>
+					</div>
+					<table id="feed-title"><td>
+							<h1>Apple Hot News</h1>
+						</td>
+					</table>
+					<div id="right_top">
+						<img src="images/right_top.png" alt="" height="75"/>
+					</div>
+				</div>	
+			</th>
+		</tr>
+		<tr id="content">
+			<td id="content-left-wrapper">
+				<ul id="rss-list">
+					<li class="selected">
+						<table class="listitem">
+							<td class="news-marker"></td>
+							<td class="news-title">
+								<h2>New Ways to Learn with Mac at Punahou School</h2>
+								<h3>Saturday, 1:13 AM</h3>
+							</td>
+						</table>
+					</li>
+					<li>
+						<table class="listitem">
+							<td class="news-marker"></td>
+							<td class="news-title">
+								<h2>Five Stars for GarageBand for iOS</h2>
+								<h3>Nov 12, 1:44 AM</h3>
+							</td>
+						</table>
+					</li>
+					<li>
+						<table class="listitem">
+							<td class="news-title">
+								<h2>AssistiveTouch Helps the Disabled Use a Smartphone</h2>
+								<h3>Nov 12, 1:42 AM</h3>
+							</td>
+						</table>
+					</li>
+				</ul>
+				<div id="footer-left">
+			</td>
+			<td id="content-right-wrapper">
+				<div id="main-content">
+					<div id="selector">
+						Select an article...
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	
+	<!-- debug navigation -->
+	<a href="index.html">index</a>
+	<a href="feed.html">feed</a>
+	<a href="new.html">new</a>
+	<!-- debug navigation -->
+	
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>RSS Reader</title>
+		
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/jquery.js'></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/Plugin/Define.js"></script>
+		
+		<script type='text/javascript' language='javascript' src='Authorization.js'></script>
+		<script type='text/javascript' language='javascript' src='Wrapper.js'></script>
+		<script type='text/javascript' language='javascript' src='Main/Define.js'></script>
+		<script type='text/javascript' language='javascript' src='Main/Main.js'></script>
+        <script type='text/javascript' language='javascript' src='Main/NewsController.js'></script>
+        <script type='text/javascript' language='javascript' src='Main/KeyHandler.js'></script>
+        
+        <script type='text/javascript' language='javascript' src='UI/Channel.js'></script>
+		<script type='text/javascript' language='javascript' src='UI/Feed.js'></script>
+        <script type='text/javascript' language='javascript' src='UI/Contents.js'></script>
+
+        <script type='text/javascript' language='javascript' src='Data/DataMgr.js'></script>
+        <script type='text/javascript' language='javascript' src='Data/ChannelMgr.js'></script>
+        <script type='text/javascript' language='javascript' src='Data/XHRToolKit.js'></script>
+        <script type='text/javascript' language='javascript' src='Data/Structure.js'></script>
+		<link rel='stylesheet' type='text/css' href = 'css/main.css'/>
+	</head>
+<body onload="Main.onLoad();">
+	<div id="loading" class="hidden"></div>
+	<table id="grid-wrapper">
+		<tr id="header">
+	    	<th id="header-left-wrapper">
+				<div id="header-left" class="header">
+					<div id="left_top">
+						<img src="images/left_top.png" alt="" height="75"/>
+					</div>
+					<table id="navigation">
+						<td id="logo_title">
+							<h1>RSS Reader</h1>
+						</td>
+					</table>
+					<div id="logo">
+						<img src="images/logo.png" alt="">
+					</div>
+					<div id="middle_left">
+						 <img src="images/middle_left.png" alt="" height="75"/>
+					</div>
+				</div>
+			</th>
+			<th id="header-right-wrapper">
+				<div id="header-right" class="header hidden">
+					<div id="middle_right">
+						 <img src="images/middle_right.png" alt="" height="75"/>
+					</div>
+					<table id="feed-title">
+						<td></td>
+					</table>
+					<div id="right_top">
+						<img src="images/right_top.png" alt="" height="75"/>
+					</div>
+				</div>	
+			</th>
+		</tr>
+		<tr id="content">
+			<td id="content-left-wrapper">
+	<div id="ui-list-top" class="top">
+		<ul id="rss-list-top" class="top">
+			<li id="list-top-li-0"></li>
+			<li id="list-top-li-1"></li>
+			<li id="list-top-li-2"></li>
+			<li id="list-top-li-3"></li>
+			<li id="list-top-li-4"></li>
+			<li id="list-top-li-5"></li>
+			<li id="list-top-li-6"></li>
+		</ul>
+		<div id="ui-scroll-top" class="top">
+			<div id="ui-scroll-bead-top" class="top"></div>
+		</div>
+		<div id="footer-left" class="top">
+	</div>
+	<div id="ui-list-bottom">
+		<ul id="rss-list-bottom" class="bottom hidden">
+			<li id="list-bottom-li-0"></li>
+			<li id="list-bottom-li-1"></li>
+			<li id="list-bottom-li-2"></li>
+			<li id="list-bottom-li-3"></li>
+			<li id="list-bottom-li-4"></li>
+			<li id="list-bottom-li-5"></li>
+			<li id="list-bottom-li-6"></li>
+		</ul>
+		<div id="ui-scroll-bottom" class="bottom">
+			<div id="ui-scroll-bead-bottom" class="bottom"></div>
+		</div>
+		<div id="footer-left" class="bottom">
+	</div>
+</td>
+			<td id="content-right-wrapper" class="hidden">
+				<div id="main-content">
+					<div id="news-title"></div>
+					<div id="news-info">
+						<div id="user">
+						</div>
+						<div id="date">
+						</div>
+					</div>
+					<div id="news-content" onkeydown="KeyHandler.contentsKeyDown()">
+					</div>
+					<div id='main-content-scroll'>
+						<div id="main-content-bead"></div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+    <a href='javascript:void(0);' id='Channel_Anchor' onkeydown='KeyHandler.channelKeyDown()'></a>
+	<a href='javascript:void(0);' id='Feed_Anchor' onkeydown='KeyHandler.feedKeyDown()'></a>
+    <a href='javascript:void(0);' id='KeyBlocker_Anchor' onkeydown='KeyHandler.keyBlocker()'></a>
+</body>
+</html>
